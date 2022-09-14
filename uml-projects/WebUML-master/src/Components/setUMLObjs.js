@@ -91,19 +91,10 @@ export default function setUMLObjs(graph, objLists) {
     };
 
     // Creates the element that is being for the actual preview.
-    let dragElt2;
     let dragElt = document.createElement("div");
     dragElt.style.border = "dashed black 1px";
     dragElt.style.width = width + "px";
     dragElt.style.height = height + "px";
-    if (umlObjImgClass === "uml") {
-      dragElt2 = document.createElement("div");
-      dragElt2.style.width = width + "px";
-      dragElt2.style.height = 50 + "px";
-      dragElt2.style.border = "dashed black 1px";
-      dragElt2.style.position = "absolute";
-      dragElt.appendChild = dragElt2;
-    }
 
     var ds = mxUtils.makeDraggable(
       img,
